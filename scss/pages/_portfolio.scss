@@ -1,0 +1,19 @@
+.portfolio-grid {
+    width: 60%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+    justify-content: center;
+
+    .portfolio-container {
+        width: 100%;
+        position: relative;
+        background-color: $background_color;
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.9;
+        }
+    }
+}

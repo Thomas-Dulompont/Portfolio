@@ -1,0 +1,43 @@
+.top {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    position: relative;
+    align-items: center;
+    .title {
+        color: $background_color;
+        text-transform: uppercase;
+        justify-self: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .left {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        .red {
+            height: 20px;
+            width: 20px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+            margin: 0px 5px;
+        }
+        .yellow {
+            height: 20px;
+            width: 20px;
+            background-color: #f0cb39;
+            border-radius: 50%;
+            margin: 0px 5px;
+        }
+        .green {
+            height: 20px;
+            width: 20px;
+            background-color: #2ecc71;
+            border-radius: 50%;
+            margin: 0px 5px;
+        }
+    }
+}

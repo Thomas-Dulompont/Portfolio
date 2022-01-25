@@ -1,19 +1,53 @@
 .portfolio-grid {
-    width: 60%;
-    margin: 100px auto;
+    width: 50%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    column-gap: 15px;
-    justify-content: center;
+    gap: 40px;
 
     .portfolio-container {
         width: 100%;
         position: relative;
-        background-color: $background_color;
+        background-color: black;
+        box-shadow: 8px 8px 0px 0px #2b2a2a;
         img {
             width: 100%;
             height: auto;
-            opacity: 0.9;
+            opacity: 0.7;
+        }
+        .language-container {
+            position: absolute;
+            width: 100%;
+            left: 50%;
+            bottom: 15%;
+            transform: translate(-50%);
+            .language {
+                width: 50%;
+                height: 80%;
+                margin: auto;
+                display: none;
+                list-style-type: none;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+                li {
+                    font-size: 15px;
+                    background-color: $background_color;
+                    color: $font_color;
+                    padding: 5px;
+                    margin: 2px;
+                    border-radius: 3px;
+                    font-weight: bold;
+                }
+            }
+        }
+        &:hover {
+            img {
+                opacity: 0.1;
+            }
+            .language {
+                display: flex;
+            }
         }
     }
 }

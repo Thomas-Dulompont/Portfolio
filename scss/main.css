@@ -428,6 +428,8 @@ h1 {
 
 body {
   background-color: #303030;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .portfolio-grid {
@@ -437,28 +439,35 @@ body {
   display: grid;
   -ms-grid-columns: (50%)[2];
       grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (1fr)[auto];
+      grid-template-rows: repeat(auto, 1fr);
   gap: 40px;
 }
 
 .portfolio-grid .portfolio-container {
-  width: 100%;
+  max-width: 1450px;
   position: relative;
-  background-color: black;
   -webkit-box-shadow: 8px 8px 0px 0px #2b2a2a;
           box-shadow: 8px 8px 0px 0px #2b2a2a;
 }
 
-.portfolio-grid .portfolio-container img {
+.portfolio-grid .portfolio-container .img-container {
+  background-color: black;
+  width: 100%;
+  line-height: 0px;
+}
+
+.portfolio-grid .portfolio-container .img-container img {
   width: 100%;
   height: auto;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .portfolio-grid .portfolio-container .language-container {
   position: absolute;
   width: 100%;
   left: 50%;
-  bottom: 15%;
+  top: 75%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }

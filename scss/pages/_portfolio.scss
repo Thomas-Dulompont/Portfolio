@@ -3,23 +3,27 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(auto, 1fr);
     gap: 40px;
-
     .portfolio-container {
-        width: 100%;
+        max-width: 1450px;
         position: relative;
-        background-color: black;
         box-shadow: 8px 8px 0px 0px #2b2a2a;
-        img {
+        .img-container {
+            background-color: black;
             width: 100%;
-            height: auto;
-            opacity: 0.7;
+            line-height: 0px;
+            img {
+                width: 100%;
+                height: auto;
+                opacity: 0.9;
+            }
         }
         .language-container {
             position: absolute;
             width: 100%;
             left: 50%;
-            bottom: 15%;
+            top: 75%;
             transform: translate(-50%);
             .language {
                 width: 50%;

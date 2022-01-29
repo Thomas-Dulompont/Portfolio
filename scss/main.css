@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -343,6 +343,100 @@ template {
   display: none;
 }
 
+.button-before {
+  width: 150px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.button-before i {
+  font-size: 70px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-before:hover {
+  cursor: pointer;
+}
+
+.button-before p {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  color: #b4b4b4;
+}
+
+.button-before:hover i {
+  font-size: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-before:hover p {
+  visibility: visible;
+  opacity: 1;
+  left: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-next {
+  width: 150px;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.button-next i {
+  font-size: 70px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-next:hover {
+  cursor: pointer;
+}
+
+.button-next p {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  color: #b4b4b4;
+}
+
+.button-next:hover i {
+  font-size: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-next:hover p {
+  visibility: visible;
+  opacity: 1;
+  right: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,7 +510,12 @@ section p {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   color: #858585;
+}
+
+p {
+  font-weight: 600;
 }
 
 h1 {
@@ -426,15 +525,57 @@ h1 {
   margin: 15px 0;
 }
 
+h2 {
+  color: #b4b4b4;
+}
+
+h3 {
+  color: #b4b4b4;
+}
+
+h4 {
+  color: #b4b4b4;
+}
+
 body {
   background-color: #303030;
   max-width: 1920px;
   margin: auto;
 }
 
+footer {
+  margin: 50px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+footer p {
+  height: 20px;
+}
+
+footer p a {
+  color: #b4b4b4;
+  text-decoration: none;
+  padding: 0 2px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer p a:hover {
+  background-color: #494949;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .portfolio-grid {
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (50%)[2];
@@ -442,6 +583,7 @@ body {
   -ms-grid-rows: (1fr)[auto];
       grid-template-rows: repeat(auto, 1fr);
   gap: 40px;
+  cursor: pointer;
 }
 
 .portfolio-grid .portfolio-container {
@@ -461,13 +603,15 @@ body {
   width: 100%;
   height: auto;
   opacity: 0.9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .portfolio-grid .portfolio-container .language-container {
   position: absolute;
   width: 100%;
   left: 50%;
-  top: 75%;
+  top: 65%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
@@ -476,7 +620,10 @@ body {
   width: 50%;
   height: 80%;
   margin: auto;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
   list-style-type: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -484,6 +631,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.1;
 }
 
 .portfolio-grid .portfolio-container .language-container .language li {
@@ -498,11 +650,16 @@ body {
 
 .portfolio-grid .portfolio-container:hover img {
   opacity: 0.1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .portfolio-grid .portfolio-container:hover .language {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  visibility: visible;
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */

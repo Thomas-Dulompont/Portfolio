@@ -1,10 +1,11 @@
 .portfolio-grid {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(auto, 1fr);
     gap: 40px;
+    cursor: pointer;
     .portfolio-container {
         max-width: 1450px;
         position: relative;
@@ -17,23 +18,28 @@
                 width: 100%;
                 height: auto;
                 opacity: 0.9;
+                transition: 0.5s;
             }
         }
         .language-container {
             position: absolute;
             width: 100%;
             left: 50%;
-            top: 75%;
+            top: 65%;
             transform: translate(-50%);
             .language {
                 width: 50%;
                 height: 80%;
                 margin: auto;
-                display: none;
+                display: flex;
+                visibility: hidden;
                 list-style-type: none;
                 flex-wrap: wrap;
                 text-align: center;
                 justify-content: center;
+                transform: translateY(100%);
+                transition: 0.3s;
+                opacity: 0.1;
                 li {
                     font-size: 15px;
                     background-color: $background_color;
@@ -48,9 +54,13 @@
         &:hover {
             img {
                 opacity: 0.1;
+                transition: 0.5s;
             }
             .language {
-                display: flex;
+                visibility: visible;
+                transform: none;
+                opacity: 1;
+                transition: 0.5s;
             }
         }
     }

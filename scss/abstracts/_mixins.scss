@@ -1,0 +1,11 @@
+@mixin button-nav {
+    width: 150px;
+    text-align: center;
+    i {
+        font-size: 70px;
+        transition: 0.5s;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}

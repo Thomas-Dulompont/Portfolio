@@ -1,0 +1,18 @@
+.navbar-bars {
+    cursor: pointer;
+    position: fixed;
+    right: 75px;
+    top: 60px;
+    i {
+        font-size: 60px;
+        transition: 0.5s;
+    }
+    &:hover {
+        cursor: pointer;
+        i {
+            transition: 0.3s;
+            opacity: 0.7;
+        }
+    }
+
+}

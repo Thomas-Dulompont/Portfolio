@@ -6,7 +6,7 @@
     transform: translateY(-50%);
     p {
         position: absolute;
-        left: 50px;
+        left: 75px;
         top: 50%;
         transform: translateY(-50%);
         transition: 0.5s;
@@ -22,7 +22,7 @@
         p {
             visibility: visible;
             opacity: 1;
-            left: 100px;
+            left: 125px;
             transition: 0.5s;
         }
     }
@@ -36,7 +36,7 @@
     transform: translateY(-50%);
     p {
         position: absolute;
-        right: 50px;
+        right: 75px;
         top: 50%;
         transform: translateY(-50%);
         transition: 0.5s;
@@ -52,7 +52,7 @@
         p {
             visibility: visible;
             opacity: 1;
-            right: 100px;
+            right: 125px;
             transition: 0.5s;
         }
     }

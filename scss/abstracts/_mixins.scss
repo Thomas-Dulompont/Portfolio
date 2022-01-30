@@ -1,5 +1,5 @@
 @mixin button-nav {
-    width: 150px;
+    width: 200px;
     text-align: center;
     i {
         font-size: 70px;
@@ -7,5 +7,11 @@
     }
     &:hover {
         cursor: pointer;
+    }
+}
+
+@mixin social-hover {
+    &:hover {
+        padding-left: 40px;
     }
 }

@@ -1,0 +1,38 @@
+.home-social {
+    position: fixed;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+    li {
+        display: flex;
+        height:inherit;
+        a {
+            padding: 15px 15px;
+            color: whitesmoke;
+            transition: 0.3s;
+            &:hover {
+                transition: 0.3s;
+            }
+            i{
+                color: whitesmoke;
+                height: 30px;
+                width: 30px;
+                font-size: 30px;
+                justify-self: center;
+                text-align: center;
+            }
+        }
+    }
+    .mail a{
+        background-color: #BB001B;
+        @include social-hover;
+    }
+    .linkedin a {
+        background-color: #0e76a8;
+        @include social-hover;
+    }
+    .github a{
+        background-color: #171515;
+        @include social-hover;
+    }
+}

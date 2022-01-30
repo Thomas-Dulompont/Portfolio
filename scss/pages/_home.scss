@@ -1,0 +1,17 @@
+.home-home {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+    text-align: center;
+    h2 {
+        font-size: 35px;
+        margin: 10px 0 25px;
+        font-weight: 800;
+    }
+    p {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    width: 50%;
+}

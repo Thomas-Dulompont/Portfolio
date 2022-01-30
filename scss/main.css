@@ -344,7 +344,7 @@ template {
 }
 
 .button-before {
-  width: 150px;
+  width: 200px;
   text-align: center;
   position: fixed;
   left: 0;
@@ -365,7 +365,7 @@ template {
 
 .button-before p {
   position: absolute;
-  left: 50px;
+  left: 75px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -385,13 +385,13 @@ template {
 .button-before:hover p {
   visibility: visible;
   opacity: 1;
-  left: 100px;
+  left: 125px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .button-next {
-  width: 150px;
+  width: 200px;
   text-align: center;
   position: fixed;
   right: 0;
@@ -412,7 +412,7 @@ template {
 
 .button-next p {
   position: absolute;
-  right: 50px;
+  right: 75px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -432,9 +432,70 @@ template {
 .button-next:hover p {
   visibility: visible;
   opacity: 1;
-  right: 100px;
+  right: 125px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.home-social {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.home-social li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+}
+
+.home-social li a {
+  padding: 15px 15px;
+  color: whitesmoke;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home-social li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home-social li a i {
+  color: whitesmoke;
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+}
+
+.home-social .mail a {
+  background-color: #BB001B;
+}
+
+.home-social .mail a:hover {
+  padding-left: 40px;
+}
+
+.home-social .linkedin a {
+  background-color: #0e76a8;
+}
+
+.home-social .linkedin a:hover {
+  padding-left: 40px;
+}
+
+.home-social .github a {
+  background-color: #171515;
+}
+
+.home-social .github a:hover {
+  padding-left: 40px;
 }
 
 .top {
@@ -497,13 +558,24 @@ template {
   margin: 0px 3px;
 }
 
-section {
-  width: 50%;
-  margin: 50px auto 20px;
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-section p {
-  font-size: 20px;
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #858585;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 * {
@@ -515,7 +587,24 @@ section p {
 }
 
 p {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+p a {
+  color: #b4b4b4;
+  text-decoration: none;
+  padding: 0 2px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+p a:hover {
+  background-color: #494949;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 h1 {
@@ -538,8 +627,9 @@ h4 {
 }
 
 body {
-  background-color: #303030;
+  background: linear-gradient(128deg, #292929 0%, #303030 50%, #292929 100%);
   max-width: 1920px;
+  min-height: 100vh;
   margin: auto;
 }
 
@@ -555,7 +645,7 @@ footer h3 {
 }
 
 footer p {
-  height: 20px;
+  margin: 6px 0;
 }
 
 footer p a {
@@ -565,12 +655,66 @@ footer p a {
   border-radius: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 15px;
 }
 
 footer p a:hover {
   background-color: #494949;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.navbar-bars {
+  cursor: pointer;
+  position: fixed;
+  right: 75px;
+  top: 60px;
+}
+
+.navbar-bars i {
+  font-size: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar-bars:hover {
+  cursor: pointer;
+}
+
+.navbar-bars:hover i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.home-home {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  text-align: center;
+  width: 50%;
+}
+
+.home-home h2 {
+  font-size: 35px;
+  margin: 10px 0 25px;
+  font-weight: 800;
+}
+
+.home-home p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.portfolio-home {
+  width: 50%;
+  margin: 50px auto 20px;
+}
+
+.portfolio-home p {
+  font-size: 20px;
 }
 
 .portfolio-grid {

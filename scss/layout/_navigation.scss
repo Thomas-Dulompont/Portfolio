@@ -19,15 +19,20 @@
 
 }
 .navbar-active {
-    z-index: 10000;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: $background_color;
+    visibility: hidden;
+    z-index: 1000;
     display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateY(-1000px);
+    width: 100vw;
+    height: 100vh;
+    background: $background_color;
     flex-direction: column;
     align-self: center;
     justify-content: center;
+    transition: 0.3s ease;
     ul {
         list-style: none;
         li {
@@ -46,4 +51,10 @@
             }
         }
     }
+}
+
+.navbar-active-display {
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.5s ease;
 }

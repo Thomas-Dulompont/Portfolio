@@ -1,22 +1,16 @@
-const buttonBurger = document.querySelector(".navbar-bars");
-const navbar = document.querySelector("nav");
+document.querySelector("nav").addEventListener("click", displayNavbar);
 
-function navbarFullScreen(){
-    const navbarActive = `
-    <div class="navbar-active">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="skills.html">Compétences</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="navbar-bars">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
-    `
+function displayNavbar() {
+    var element = document.querySelector(".navbar-active");
+    element.classList.toggle("navbar-active-display");
+}
 
-    navbar.innerHTML = navbarActive;
-};
+const footer = document.querySelector("footer");
+const footerText = `
+<h3>Contactons nous !</h3>
+<p>N'hésitez pas à me contacter pour parler de votre projet,</p>
+<p>je suis joignable par mail : <a href="mailto:thomasdulompont.1@gmail.com">thomasdulompont.1@gmail.com</a></p>
+<p>ou connectons nous sur Linkedin : <a href="https://www.linkedin.com/in/thomas-dulompont-087544228/">Thomas-Dlmp</a></p>
+`;
 
-buttonBurger.addEventListener("click", navbarFullScreen, false);
+footer.innerHTML += footerText;

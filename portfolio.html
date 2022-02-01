@@ -22,18 +22,29 @@
 </head>
 <body>
     <nav>
-        <div class="button-before">
-            <i class="fas fa-chevron-left"></i>
-            <p>Accueil</p>
-        </div>
-        <div class="button-next">
-            <i class="fas fa-chevron-right"></i>
-            <p>Compétences</p>
+        <div class="navbar-active">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="compétences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-bars">
+                <i class="fas fa-times"></i>
+            </div>
         </div>
         <div class="navbar-bars">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
+    <div class="button-before button-nav">
+        <i class="fas fa-chevron-left"></i>
+        <p id="before">Accueil</p>
+    </div>
+    <div class="button-next button-nav">
+        <i class="fas fa-chevron-right"></i>
+        <p id="next">Compétences</p>
+    </div>
     <section class="portfolio-home">
         <h1>PORTFOLIO</h1>
         <p>Retrouvez mes projets en cours et aboutis avec leurs informations complémentaires...
@@ -135,10 +146,7 @@
         </div>
     </div>
     <footer>
-        <h3>Contactons nous !</h3>
-        <p>N'hésitez pas à me contacter pour parler de votre projet,</p>
-        <p>je suis joignable par mail : <a href="#">thomasdulompont.1@gmail.com</a></p>
-        <p>ou connectons nous sur Linkedin : <a href="#">Thomas-Dlmp</a></p>
+
     </footer>
 
     <!-- JAVASCRIPT -->

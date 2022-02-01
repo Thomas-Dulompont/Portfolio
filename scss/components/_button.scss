@@ -2,7 +2,7 @@
     @include button-nav;
     position: fixed;
     left: 0;
-    top: 50%;
+    top: 50vh;
     transform: translateY(-50%);
     p {
         position: absolute;
@@ -32,7 +32,7 @@
     @include button-nav;
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 50vh;
     transform: translateY(-50%);
     p {
         position: absolute;

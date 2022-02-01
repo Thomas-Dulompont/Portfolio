@@ -1,0 +1,75 @@
+.competences-home {
+    width: 50%;
+    margin: 50px auto 50px;
+    p {
+        font-size: 20px;
+    }
+}
+
+.competences-grid {
+    width: 50%;
+    margin: 0 auto 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    h3 {
+        margin: 35px 10px 10px;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .title-languages {
+        text-align: right;
+    }
+    .languages {
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        li {
+            padding: 15px;
+            img {
+                width: 75px;
+                height: auto;
+                filter: drop-shadow(5px 4px 0px #252525);
+            }
+        }
+    }
+    .title-outils {
+        text-align: left;
+    }
+    .outils {
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-start;
+        li {
+            padding: 15px;
+            img {
+                width: 75px;
+                height: auto;
+                filter: drop-shadow(5px 4px 0px #252525);
+            }
+        }
+    }
+    .title-gestions {
+        text-align: right;
+    }
+    .gestions {
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        float: right;
+        list-style-type: none;
+        justify-content: flex-end;
+        li {
+            padding: 15px;
+            img {
+                width: 75px;
+                height: auto;
+                filter: drop-shadow(5px 4px 0px #2b2a2a);
+            }
+        }
+    }
+}

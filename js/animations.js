@@ -23,7 +23,6 @@ function animationNext() {
 }
 
 
-// FOOTER
 autoFooter();
 
 

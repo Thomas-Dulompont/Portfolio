@@ -656,7 +656,8 @@ template {
 
 p {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
+  margin: 5px 0;
 }
 
 p a {
@@ -666,7 +667,7 @@ p a {
   border-radius: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 p a:hover {
@@ -684,6 +685,8 @@ h1 {
 
 h2 {
   color: #b4b4b4;
+  font-size: 35px;
+  font-weight: 800;
 }
 
 h3 {
@@ -714,6 +717,7 @@ footer h3 {
 
 footer p {
   margin: 6px 0;
+  font-size: 16px;
 }
 
 footer p a {
@@ -723,7 +727,7 @@ footer p a {
   border-radius: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 footer p a:hover {
@@ -827,14 +831,7 @@ footer p a:hover {
 }
 
 .home-home h2 {
-  font-size: 35px;
   margin: 10px 0 25px;
-  font-weight: 800;
-}
-
-.home-home p {
-  font-size: 18px;
-  margin: 5px 0;
 }
 
 .portfolio-home {
@@ -842,13 +839,13 @@ footer p a:hover {
   margin: 50px auto 20px;
 }
 
-.portfolio-home p {
-  font-size: 20px;
+.portfolio-home h2 {
+  margin: 10px 0;
 }
 
 .portfolio-grid {
   width: 50%;
-  margin: 0 auto 100px;
+  margin: 50px auto 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (50%)[2];
@@ -864,6 +861,37 @@ footer p a:hover {
   position: relative;
   -webkit-box-shadow: 8px 8px 0px 0px #2b2a2a;
           box-shadow: 8px 8px 0px 0px #2b2a2a;
+}
+
+.portfolio-grid .portfolio-container .more {
+  position: absolute;
+  bottom: 20px;
+  opacity: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.portfolio-grid .portfolio-container .more p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  font-size: 15px;
+  background-color: #303030;
+  color: #858585;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 3px;
+  font-weight: bold;
+  -webkit-box-shadow: 3px 3px 0px 0px #1b1b1b;
+          box-shadow: 3px 3px 0px 0px #1b1b1b;
 }
 
 .portfolio-grid .portfolio-container .img-container {
@@ -884,7 +912,7 @@ footer p a:hover {
   position: absolute;
   width: 100%;
   left: 50%;
-  top: 65%;
+  top: 45%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
@@ -904,8 +932,8 @@ footer p a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0.1;
@@ -919,12 +947,22 @@ footer p a:hover {
   margin: 2px;
   border-radius: 3px;
   font-weight: bold;
+  -webkit-box-shadow: 3px 3px 0px 0px #1b1b1b;
+          box-shadow: 3px 3px 0px 0px #1b1b1b;
 }
 
 .portfolio-grid .portfolio-container:hover img {
   opacity: 0.1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.portfolio-grid .portfolio-container:hover .more {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .portfolio-grid .portfolio-container:hover .language {
@@ -1044,5 +1082,11 @@ footer p a:hover {
   height: auto;
   -webkit-filter: drop-shadow(5px 4px 0px #2b2a2a);
           filter: drop-shadow(5px 4px 0px #2b2a2a);
+}
+
+.formulaire {
+  z-index: 1000;
+  width: 60%;
+  margin: 150px auto;
 }
 /*# sourceMappingURL=main.css.map */

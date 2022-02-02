@@ -1,13 +1,13 @@
 .portfolio-home {
     width: 50%;
     margin: 50px auto 20px;
-    p {
-        font-size: 20px;
+    h2 {
+        margin: 10px 0;
     }
 }
 .portfolio-grid {
     width: 50%;
-    margin: 0 auto 100px;
+    margin: 50px auto 100px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(auto, 1fr);
@@ -17,6 +17,27 @@
         max-width: 1450px;
         position: relative;
         box-shadow: 8px 8px 0px 0px #2b2a2a;
+        .more {
+            position: absolute;
+            bottom: 20px;
+            opacity: 0;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            transform: translateY(50%);
+            p {
+                width: max-content;
+                text-align: center;
+                font-size: 15px;
+                background-color: $background_color;
+                color: $font_color;
+                padding: 5px;
+                margin: 2px;
+                border-radius: 3px;
+                font-weight: bold;
+                box-shadow: 3px 3px 0px 0px #1b1b1b;
+            }
+        }
         .img-container {
             background-color: black;
             width: 100%;
@@ -32,7 +53,7 @@
             position: absolute;
             width: 100%;
             left: 50%;
-            top: 65%;
+            top: 45%;
             transform: translate(-50%);
             .language {
                 width: 70%;
@@ -44,7 +65,7 @@
                 flex-wrap: wrap;
                 text-align: center;
                 justify-content: center;
-                transform: translateY(100%);
+                transform: translateY(50%);
                 transition: 0.3s;
                 opacity: 0.1;
                 li {
@@ -55,6 +76,7 @@
                     margin: 2px;
                     border-radius: 3px;
                     font-weight: bold;
+                    box-shadow: 3px 3px 0px 0px #1b1b1b;
                 }
             }
         }
@@ -62,6 +84,11 @@
             img {
                 opacity: 0.1;
                 transition: 0.5s;
+            }
+            .more {
+                opacity: 1;
+                transition: 0.5s;
+                transform: none;
             }
             .language {
                 visibility: visible;

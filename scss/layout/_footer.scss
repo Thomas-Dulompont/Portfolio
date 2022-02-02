@@ -8,13 +8,14 @@ footer {
     }
     p {
         margin: 6px 0;
+        font-size: 16px;
         a {
             color: $font_color_title;
             text-decoration: none;
             padding: 0 2px;
             border-radius: 5px;
             transition: 0.5s;
-            font-size: 15px;
+            font-size: 16px;
             &:hover {
                 background-color: #494949;
                 transition: 0.5s;

@@ -39,3 +39,4 @@ function autoFooter() {
         footer.innerHTML += footerText;
     }
 } 
+

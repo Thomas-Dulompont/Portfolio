@@ -65,6 +65,7 @@
     position: fixed;
     left: 75px;
     top: 60px;
+    z-index: 1000000;
     i {
         font-size: 60px;
         transition: 0.5s;

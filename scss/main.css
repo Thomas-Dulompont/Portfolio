@@ -512,6 +512,7 @@ template {
   position: fixed;
   left: 75px;
   top: 60px;
+  z-index: 1000000;
 }
 
 .button-back i {

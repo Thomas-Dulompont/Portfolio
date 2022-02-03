@@ -5,6 +5,7 @@
     top: 50vh;
     transform: translateY(-50%);
     p {
+        margin: 0;
         position: absolute;
         left: 75px;
         top: 50%;
@@ -35,6 +36,7 @@
     top: 50vh;
     transform: translateY(-50%);
     p {
+        margin: 0;
         position: absolute;
         right: 75px;
         top: 50%;
@@ -56,4 +58,23 @@
             transition: 0.5s;
         }
     }
+}
+
+.button-back {
+    cursor: pointer;
+    position: fixed;
+    left: 75px;
+    top: 60px;
+    i {
+        font-size: 60px;
+        transition: 0.5s;
+    }
+    &:hover {
+        cursor: pointer;
+        i {
+            transition: 0.3s;
+            color: #b8b8b8;
+        }
+    }
+
 }

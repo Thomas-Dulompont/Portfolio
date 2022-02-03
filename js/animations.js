@@ -10,19 +10,6 @@ function displayNavbar() {
     element.classList.toggle("navbar-active-display");
 };
 
-
-// BUTTON NAVIGATION
-
-function animationNext() {
-    const animation = `
-    <div class="animation">
-        <i class="fas fa-spinner"></i>
-    </div>
-    `
-    body.innerHTML = animation;
-}
-
-
 autoFooter();
 
 
@@ -40,3 +27,21 @@ function autoFooter() {
     }
 } 
 
+autoFavIcon();
+
+
+function autoFavIcon() {
+    const head = document.querySelector("head");
+    const favicon = `
+    <link rel="apple-touch-icon" sizes="180x180" href="https://thomasdlmp.fr/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://thomasdlmp.fr/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://thomasdlmp.fr/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://thomasdlmp.fr/img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    `;
+    if (head === null) {
+    } else {
+        head.innerHTML += favicon;
+    }
+} 

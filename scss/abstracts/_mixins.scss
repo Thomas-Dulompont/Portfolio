@@ -15,3 +15,7 @@
         padding-left: 40px;
     }
 }
+
+@mixin box-shadow {
+    box-shadow: 8px 8px 0px 0px #2b2a2a;
+}

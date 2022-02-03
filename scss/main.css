@@ -432,6 +432,7 @@ template {
 }
 
 .button-before p {
+  margin: 0;
   position: absolute;
   left: 75px;
   top: 50%;
@@ -479,6 +480,7 @@ template {
 }
 
 .button-next p {
+  margin: 0;
   position: absolute;
   right: 75px;
   top: 50%;
@@ -503,6 +505,29 @@ template {
   right: 125px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.button-back {
+  cursor: pointer;
+  position: fixed;
+  left: 75px;
+  top: 60px;
+}
+
+.button-back i {
+  font-size: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-back:hover {
+  cursor: pointer;
+}
+
+.button-back:hover i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #b8b8b8;
 }
 
 .home-social {
@@ -820,6 +845,143 @@ footer p a:hover {
   transition: 0.5s ease;
 }
 
+.portfolioContent {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.portfolioContent h2 {
+  margin: 30px 0 10px;
+}
+
+.portfolioContent .button-visit {
+  display: block;
+  margin: 30px 0;
+  padding: 10px 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #009688;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.portfolioContent .button-visit i {
+  font-size: 16px;
+  color: white;
+}
+
+.portfolioContent .button-visit:hover {
+  background-color: #00665c;
+}
+
+.portfolioContent .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 30px;
+  margin: 40px 0 0;
+  background-color: lightgray;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolioContent .top .title {
+  color: #303030;
+  text-transform: uppercase;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: absolute;
+  font-size: 13px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.portfolioContent .top .left {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolioContent .top .left .red {
+  height: 13px;
+  width: 13px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  margin: 0px 3px 0px 10px;
+}
+
+.portfolioContent .top .left .yellow {
+  height: 13px;
+  width: 13px;
+  background-color: #f0cb39;
+  border-radius: 50%;
+  margin: 0px 3px;
+}
+
+.portfolioContent .top .left .green {
+  height: 13px;
+  width: 13px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  margin: 0px 3px;
+}
+
+.portfolioContent .img-container {
+  width: 100%;
+  margin: 0 0 50px;
+}
+
+.portfolioContent .img-container img {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 8px 8px 0px 0px #2b2a2a;
+          box-shadow: 8px 8px 0px 0px #2b2a2a;
+}
+
+.portfolioContent ul {
+  margin: 10px 25px;
+}
+
+.portfolioContent ul li {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.portfolioContent ul li a {
+  color: #b4b4b4;
+  text-decoration: none;
+  padding: 0 2px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+}
+
+.portfolioContent ul li a:hover {
+  background-color: #494949;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolioContent ul li i {
+  color: #5c5c5c;
+  font-size: 22px;
+}
+
 .home-home {
   position: absolute;
   left: 50%;
@@ -1080,13 +1242,56 @@ footer p a:hover {
 .competences-grid .gestions li img {
   width: 75px;
   height: auto;
-  -webkit-filter: drop-shadow(5px 4px 0px #2b2a2a);
-          filter: drop-shadow(5px 4px 0px #2b2a2a);
+  -webkit-filter: drop-shadow(5px 4px 0px #252525);
+          filter: drop-shadow(5px 4px 0px #252525);
+}
+
+.contact-home {
+  width: 50%;
+  margin: 50px auto 50px;
+}
+
+.contact-home p {
+  font-size: 20px;
 }
 
 .formulaire {
   z-index: 1000;
   width: 60%;
   margin: 150px auto;
+}
+
+.contact-liens-utiles {
+  width: 50%;
+  margin: 50px auto 50px;
+}
+
+.contact-liens-utiles h3 {
+  font-size: 25px;
+}
+
+.contact-liens-utiles ul {
+  margin: 10px 30px;
+}
+
+.contact-liens-utiles ul li {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-liens-utiles ul li a {
+  color: #b4b4b4;
+  text-decoration: none;
+  padding: 0 2px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+}
+
+.contact-liens-utiles ul li a:hover {
+  background-color: #494949;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */

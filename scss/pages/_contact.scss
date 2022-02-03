@@ -1,5 +1,40 @@
+.contact-home {
+    width: 50%;
+    margin: 50px auto 50px;
+    p {
+        font-size: 20px;
+    }
+}
+
 .formulaire {
     z-index: 1000;
     width: 60%;
     margin: 150px auto;
+}
+
+.contact-liens-utiles {
+    width: 50%;
+    margin: 50px auto 50px;
+    h3 {
+        font-size: 25px;
+    }
+    ul {
+        margin: 10px 30px;
+        li {
+            font-size: 18px;
+            font-weight: 600;
+            a {
+                color: $font_color_title;
+                text-decoration: none;
+                padding: 0 2px;
+                border-radius: 5px;
+                transition: 0.5s;
+                font-size: 18px;
+                &:hover {
+                    background-color: #494949;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
 }

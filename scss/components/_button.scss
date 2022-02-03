@@ -91,5 +91,13 @@
     .button-back {
         left: 25px;
         top: 30px;
+        background-color: #1d1d1d;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        text-align: center;
+        i {
+            margin-top: 10px;
+        }
     }
 }

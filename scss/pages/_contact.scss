@@ -8,7 +8,7 @@
 
 .formulaire {
     z-index: 1000;
-    width: 60%;
+    width: 50%;
     margin: 150px auto;
 }
 
@@ -36,5 +36,33 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .contact-home {
+        width: 75%;
+        margin: 100px auto 50px;
+    }
+    .contact-liens-utiles {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .contact-home {
+        width: 80%;
+    }
+    .contact-liens-utiles {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 300px)
+{
+    .contact-liens-utiles {
+        width: 100%;
     }
 }

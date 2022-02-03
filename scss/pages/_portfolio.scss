@@ -99,3 +99,49 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px)
+{
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .portfolio-home {
+        width: 65%;
+        margin: 100px auto 50px;
+    }
+    .portfolio-grid {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .language-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .portfolio-home {
+        width: 95%;
+    }
+    .portfolio-grid {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 300px)
+{
+    .portfolio-container {
+        .top {
+            .title {
+                display: none;
+            }
+        }
+    }
+}

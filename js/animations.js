@@ -45,3 +45,26 @@ function autoFavIcon() {
         head.innerHTML += favicon;
     }
 } 
+
+autoNavbar();
+
+function autoNavbar() {
+    const nav = document.querySelector("nav");
+    const navbar = `
+    <div class="navbar-active">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="compétences.html">Compétences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-bars">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    `;
+    if (nav === null) {
+    } else {
+        nav.innerHTML += navbar;
+    }
+}

@@ -102,3 +102,17 @@
         }
     }
 }
+
+@media screen and (max-width: 600px)
+{
+    .portfolioContent {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .portfolioContent {
+        width: 90%;
+    }
+}

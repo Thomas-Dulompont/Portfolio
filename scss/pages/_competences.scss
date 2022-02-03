@@ -73,3 +73,49 @@
         }
     }
 }
+
+@media screen and (max-width: 900px)
+{
+    .competences-grid {
+        .title-gestions {
+            text-align: center;
+        }
+        .gestions {
+            justify-content: center;
+        }
+        .title-outils {
+            text-align: center;
+        }
+        .outils {
+            justify-content: center;
+        }
+        .title-languages {
+            text-align: center;
+        }
+        .languages {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .competences-home {
+        width: 75%;
+        margin: 100px auto 50px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .competences-grid {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 350px)
+{
+    .competences-grid {
+        width: 90%;
+    }
+}

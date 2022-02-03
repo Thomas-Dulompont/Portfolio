@@ -531,9 +531,58 @@ template {
   color: #b8b8b8;
 }
 
+.mobile-next {
+  width: 200px;
+  text-align: center;
+  display: none;
+  position: relative;
+  margin: 50px auto;
+}
+
+.mobile-next i {
+  font-size: 70px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mobile-next:hover {
+  cursor: pointer;
+}
+
+.mobile-next p {
+  margin: 0;
+  position: absolute;
+  right: 75px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  color: #b4b4b4;
+}
+
+.mobile-next:hover i {
+  font-size: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mobile-next:hover p {
+  visibility: visible;
+  opacity: 1;
+  right: 125px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media screen and (max-width: 900px) {
   .navigation {
     display: none;
+  }
+  .mobile-next {
+    display: block;
   }
 }
 
@@ -803,16 +852,13 @@ footer p a:hover {
   transition: 0.5s;
 }
 
-.navbar-bars:hover {
-  cursor: pointer;
-  -webkit-animation: nav-bars 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: nav-bars 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
 .navbar-bars:hover i {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #b8b8b8;
+  cursor: pointer;
+  -webkit-animation: nav-bars 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: nav-bars 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .navbar-active {
@@ -878,14 +924,15 @@ footer p a:hover {
   .navbar-bars {
     right: 25px;
     top: 25px;
-    background-color: #1d1d1d;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
+    background-color: #242424;
+    height: 60px;
+    width: 60px;
+    border-radius: 20%;
     text-align: center;
   }
   .navbar-bars i {
     margin-top: 10px;
+    font-size: 40px;
   }
 }
 

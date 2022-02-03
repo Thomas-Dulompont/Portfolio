@@ -9,12 +9,12 @@
         transition: 0.5s;
     }
     &:hover {
-        cursor: pointer;
-        -webkit-animation: nav-bars 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: nav-bars 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         i {
             transition: 0.3s;
             color: #b8b8b8;
+            cursor: pointer;
+            -webkit-animation: nav-bars 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: nav-bars 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
     }
 
@@ -66,13 +66,14 @@
     .navbar-bars {
         right: 25px;
         top: 25px;
-        background-color: #1d1d1d;
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
+        background-color: #242424;
+        height: 60px;
+        width: 60px;
+        border-radius: 20%;
         text-align: center;
         i {
             margin-top: 10px;
+            font-size: 40px;
         }
     }
 }

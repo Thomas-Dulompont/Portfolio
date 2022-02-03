@@ -79,11 +79,43 @@
     }
 
 }
+.mobile-next {
+    @include button-nav;
+    display: none;
+    position: relative;
+    margin: 50px auto;
+    p {
+        margin: 0;
+        position: absolute;
+        right: 75px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.5s;
+        visibility: hidden;
+        opacity: 0;
+        color: $font_color_title;
+    }
+    &:hover {
+        i {
+            font-size: 80px;
+            transition: 0.5s;
+        }
+        p {
+            visibility: visible;
+            opacity: 1;
+            right: 125px;
+            transition: 0.5s;
+        }
+    }
+}
 
 @media screen and (max-width: 900px)
 {
     .navigation {
         display: none;
+    }
+    .mobile-next {
+        display: block;
     }
 }
 
@@ -102,3 +134,4 @@
         }
     }
 }
+
